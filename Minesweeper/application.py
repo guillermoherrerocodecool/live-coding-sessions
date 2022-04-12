@@ -4,7 +4,7 @@ from game import play_game
 
 def main():
     mode = select_mode() # done!
-    field = generate_field(mode)
+    field = generate_field(mode) # done!
     play_game(field)
     
 if __name__ == '__main__':

@@ -20,6 +20,6 @@
 # KEYWORDS: mine, field, uncover, flag, uncertain
 
 # 8 x 8 fields: 10 mines
-# 16 x 1fields: 40 mines
-# 30 x 16 fields: 99mines
+# 16 x 16 fields: 40 mines
+# 30 x 16 fields: 99 mines
 # custom
