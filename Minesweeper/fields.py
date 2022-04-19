@@ -6,7 +6,8 @@ field_parameters = {EASY: (8, 8, 10), MEDIUM : (16, 16, 40), HARD : (30, 16, 99)
 def generate_field(mode):
     parameters = field_parameters[mode]
     field = generate_empty_field(parameters)
-    add_mines(field, parameters)
+    add_mines_randomly(field, parameters)
+    return field
 
 def generate_empty_field(parameters):
     field = {}
@@ -15,7 +16,7 @@ def generate_empty_field(parameters):
             field[(width,height)] = {MINE : False, STATUS: COVERED}
     return field
     
-def add_mines(field, parameters):
+def add_mines_randomly(field, parameters):
     width = parameters[INDEX_WIDTH]
     height = parameters[INDEX_HEIGHT]
     mines = parameters[INDEX_MINES]

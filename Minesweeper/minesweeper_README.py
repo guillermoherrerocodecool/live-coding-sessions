@@ -8,7 +8,7 @@
 # the user has three options:
     # 1. "uncover" one box (if there is a bomb, it explodes, YOU DIE)
     # 2. "plant flag" over one box (i suspect there is a bomb, and if i accidencally "uncover" that box, it doesn't work)
-    # 3. "uncertain", I think there could be a bomb here
+    # ????3. "uncertain", I think there could be a bomb here
 
 # I win when:
     # all of the flags are placed over mine
@@ -23,3 +23,15 @@
 # 16 x 16 fields: 40 mines
 # 30 x 16 fields: 99 mines
 # custom
+
+# GAME LOGIC:
+
+# game loop (the game ends when the player wins or loses)
+    # win: when all boxes are uncovered, except the mines 
+        # alternative win: all mines have a flag on top, no need to uncover all the rest
+    # lose: when a mine is uncovered
+# game loop step:
+    # display the current state of the field
+    # receive user input (move, coordinate)
+    # apply changes
+    # repeat

@@ -15,8 +15,8 @@ INDEX_HEIGHT = 1
 INDEX_MINES = 2
 MINE = "mine"
 STATUS = "status"
-COVERED = "covered"
-UNCOVERED = "uncovered"
-FLAGGED = "flagged"
-UNCERTAIN = "uncertain"
+COVERED = "C"
+UNCOVERED = "U"
+FLAGGED = "F"
+#UNCERTAIN = "uncertain"
 
