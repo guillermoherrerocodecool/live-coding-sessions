@@ -1,0 +1,13 @@
+datasets:
+  rooms:
+    - number: 1
+      house: GRYFFINDOR
+    - number: 2
+      house: HUFFLEPUFF
+    - number: 3
+      house: RAVENCLAW
+  students:
+    - name: Harry Potter
+      pet: OWL
+    - name: Ron Weasley
+      pet: RAT
