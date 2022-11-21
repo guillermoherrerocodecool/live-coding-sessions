@@ -1,0 +1,22 @@
+Returns:
+int: the minimum number of operations required to make the password "similar"
+
+Constraints:
+2 <= |password| <= 3*10~5
+it is guaranteed that the length of the password is even
+the given string consists of lowercase Latin characters only
+
+sample input: abcd -> password = "abcd"
+sample output: 1
+explanation: in one operation "d" can be changed into "e". The resultant string is "abce", which has an equal
+number of vowels and consonants
+
+Description:
+a password is "similar" if the number of vowels is equal to the number of consonants.
+Vowels are aeiou.
+In one operation, a character of a string can be incremented or decremented. For example, "f" can be incremented to "g" or
+decremented to "e". Note that "a" cannot be decremented and "z" cannot be incremented.
+
+Find the minimum number of operations in which a password can be made "similar".
+example:
+"hack" -> "h" can be incremented to "i" in one operation -> "iack" -> two vowels and two consonants
