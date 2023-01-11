@@ -1,0 +1,13 @@
+game:
+  moves:
+    - name: "rock"
+      beats: "scissors lizard"
+    - name: "scissors"
+      beats: "paper lizard"
+    - name: "paper"
+      beats: "rock spock"
+    - name: "lizard"
+      beats: "spock paper"
+    - name: "spock"
+      beats: "rock scissors"
+      
