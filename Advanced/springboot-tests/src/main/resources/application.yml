@@ -1,0 +1,12 @@
+mcdonalds:
+  products:
+    - name: cheeseburger
+      ingredients:
+        - cheese
+        - burger
+      price: 1.50
+    - name: caesar_salad
+      ingredients:
+        - caesar
+        - salad
+      price: 5.90
