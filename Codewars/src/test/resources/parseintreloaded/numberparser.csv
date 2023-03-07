@@ -1,0 +1,51 @@
+expected, literal
+0, zero
+1, one
+2, two
+3, three
+4, four
+5, five
+6, six
+7, seven
+8, eight
+9, nine
+10, ten
+11, eleven
+12, twelve
+13, thirteen
+14, fourteen
+15, fifteen
+16, sixteen
+17, seventeen
+18, eighteen
+19, nineteen
+20, twenty
+21, twenty-one
+25, twenty-five
+29, twenty-nine
+30, thirty
+32, thirty-two
+40, forty
+50, fifty
+60, sixty
+70, seventy
+80, eighty
+90, ninety
+100, one hundred
+200, two hundred
+999, nine hundred ninety-nine
+999, nine hundred and ninety-nine
+1000, one thousand
+10000, ten thousand
+11000, eleven thousand
+1000000, one million
+101, one hundred and one
+101, one hundred one
+222, two hundred twenty-two
+1111, one thousand one hundred eleven
+12121, twelve thousand one hundred and twenty-one
+100101, one hundred thousand one hundred and one
+999999, nine hundred and ninety-nine thousand nine hundred and ninety-nine
+3000000, three million
+4444444, four million four hundred forty-four thousand four hundred and forty-four
+99999999, ninety-nine million nine hundred ninety-nine thousand nine hundred and ninety-nine
