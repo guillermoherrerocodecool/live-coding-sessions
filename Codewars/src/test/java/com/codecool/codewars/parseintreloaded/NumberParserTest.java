@@ -1,9 +1,9 @@
 package com.codecool.codewars.parseintreloaded;
 
+import com.codecool.codewars.parseintreloaded.multiplier.MultipliersProvider;
+import com.codecool.codewars.parseintreloaded.tens.TensParser;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-
-import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.anyString;
@@ -12,14 +12,8 @@ import static org.mockito.Mockito.when;
 
 class NumberParserTest {
     TensParser tensParser = mock(TensParser.class);
-    //TODO: replace List<Multiplier> with LinkedHashMap<String, Integer>
-    List<Multiplier> multipliers = List.of(
-            new Multiplier("billion", 1000000000),
-            new Multiplier("million", 1000000),
-            new Multiplier("thousand", 1000),
-            new Multiplier("hundred", 100)
-    );
-    NumberParser numberParser = new NumberParser(tensParser, multipliers);
+    MultipliersProvider multipliersProvider = new MultipliersProvider();
+    NumberParser numberParser = new NumberParser(tensParser, multipliersProvider.getMultipliers());
 
     @ParameterizedTest
     @CsvSource({
@@ -30,11 +24,12 @@ class NumberParserTest {
             "1000, one thousand",
             "100000, one hundred thousand",
             "1000000, one million",
+            "100000000, one hundred million",
             "1000000000, one billion",
     })
     void parse(int expected, String literal) {
         when(tensParser.parse(anyString())).thenReturn(1);
-        
+
         int result = numberParser.parse(literal);
 
         assertEquals(expected, result);

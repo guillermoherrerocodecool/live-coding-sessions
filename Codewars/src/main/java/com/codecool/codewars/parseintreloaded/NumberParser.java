@@ -1,5 +1,8 @@
 package com.codecool.codewars.parseintreloaded;
 
+import com.codecool.codewars.parseintreloaded.multiplier.Multiplier;
+import com.codecool.codewars.parseintreloaded.tens.TensParser;
+
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;

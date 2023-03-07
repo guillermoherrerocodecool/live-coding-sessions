@@ -1,4 +1,4 @@
-package com.codecool.codewars.parseintreloaded;
+package com.codecool.codewars.parseintreloaded.tens;
 
 import java.util.HashMap;
 import java.util.List;
@@ -7,7 +7,7 @@ import java.util.Optional;
 import java.util.function.Function;
 import java.util.stream.Stream;
 
-public class TensParser {
+public class TensParserFunctionalInterfaces {
     private final Map<String, Integer> translations = new HashMap<>() {{
         put("zero", 0);
         put("one", 1);
