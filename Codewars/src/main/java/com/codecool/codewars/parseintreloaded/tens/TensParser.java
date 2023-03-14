@@ -11,7 +11,7 @@ public class TensParser {
     }
 
     public int parse(String literal) {
-        return parse(literal.split("-"));
+        return parse(literal.split("-| "));
     }
 
     private int parse(String[] literals) {

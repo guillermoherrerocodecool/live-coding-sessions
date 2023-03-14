@@ -19,8 +19,8 @@ class NumberParserIntegrationTest {
             resources = "/parseintreloaded/numberparser.csv",
             numLinesToSkip = 1
     )
-    void parse(int expected, String literal) {
-        int result = numberParser.parse(literal);
+    void parse(long expected, String literal) {
+        long result = numberParser.parse(literal);
 
         assertEquals(expected, result);
     }

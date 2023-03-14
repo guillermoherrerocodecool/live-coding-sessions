@@ -27,10 +27,10 @@ class NumberParserTest {
             "100000000, one hundred million",
             "1000000000, one billion",
     })
-    void parse(int expected, String literal) {
+    void parse(long expected, String literal) {
         when(tensParser.parse(anyString())).thenReturn(1);
 
-        int result = numberParser.parse(literal);
+        long result = numberParser.parse(literal);
 
         assertEquals(expected, result);
     }

@@ -17,12 +17,12 @@ public class NumberParser {
         this.multipliers = multipliers;
     }
 
-    public int parse(String literal) {
+    public long parse(String literal) {
         literal = literal.replaceAll(" and ", " ");
         return parse(literal, new LinkedList<>(multipliers));
     }
 
-    private int parse(String literal, Queue<Multiplier> multipliers) {
+    private long parse(String literal, Queue<Multiplier> multipliers) {
         if (multipliers.isEmpty()) {
             return tensParser.parse(literal);
         }
@@ -34,8 +34,8 @@ public class NumberParser {
         if (literal.endsWith(multiplier.name())) {
             return multiplier.number() * parse(parts[0], multipliers);
         }
-        int left = multiplier.number() * parse(parts[0], new LinkedList<>(multipliers));
-        int right = parse(parts[1], new LinkedList<>(multipliers));
+        long left = multiplier.number() * parse(parts[0], new LinkedList<>(multipliers));
+        long right = parse(parts[1], new LinkedList<>(multipliers));
         return left + right;
     }
 }
