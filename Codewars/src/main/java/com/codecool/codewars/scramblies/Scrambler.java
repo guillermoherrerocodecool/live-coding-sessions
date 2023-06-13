@@ -20,6 +20,6 @@ public class Scrambler {
     }
 
     private boolean couldPop(int ascii, Map<Integer, Long> appearances) {
-        return -1L != appearances.compute(ascii, (k, v) -> v == null ? -1L : v - 1);
+        return -1L != appearances.compute(ascii, (key, value) -> value == null ? -1L : value - 1);
     }
 }
