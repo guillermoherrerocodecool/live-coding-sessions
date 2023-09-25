@@ -1,0 +1,15 @@
+PA example:
+
+TShirt Printing Company Management
+
+DDD (Domain Driven Development)
+
+A tshirt company wants to be able to digitalize the selling of their merchandising.
+Customers should have an id and an email address to contact them when their purchase is ready.
+Tshirts have an id, a url reference where to find the picture to print on it, three different colors: white, black, blue; and three different sizes: S, M, L.
+A purchase has an id, the price and a timestamp, a customer as well, and a tshirt
+
+Implement the following methods:
+- calculate the revenue of this month
+- calculate how many tshirts have been sold by color and size
+- find the (one) customer who has purchased the biggest amount of tshirts
